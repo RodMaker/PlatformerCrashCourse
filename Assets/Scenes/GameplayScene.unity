@@ -2368,8 +2368,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0063028336, y: -0.24265897}
-  m_Size: {x: 0.490417, y: 1.6942575}
+  m_Offset: {x: 0.0063028336, y: -0.20289284}
+  m_Size: {x: 0.490417, y: 1.6147252}
   m_Direction: 0
 --- !u!114 &961044729
 MonoBehaviour:
@@ -2398,7 +2398,22 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   groundDistance: 0.05
+  wallDistance: 0.2
+  ceilingDistance: 0.05
   _isGrounded: 0
+  _isOnWall: 0
+  _isOnCeiling: 0
+--- !u!114 &961044732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7595179402240794440, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+  m_PrefabInstance: {fileID: 2110464603169661897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407944624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb25c42b4ce71143a1eb8e09c3472d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221051728
 GameObject:
   m_ObjectHideFlags: 0
@@ -9986,6 +10001,34 @@ PrefabInstance:
     - target: {fileID: 27728231460164612, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 961044732}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085299195638601779, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6931615098865277330, guid: 14e8ee158b94d724ebbf034438ed5395, type: 3}
       propertyPath: m_RootOrder
